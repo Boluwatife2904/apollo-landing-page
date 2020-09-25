@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "Archivo Narrow";
-  src: local("../fonts/Archivo Narrow Regular"), local("../fonts/ArchivoNarrow"),
-    url("../fonts/ArchivoNarrow-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -18,17 +13,22 @@ html {
 }
 
 body {
-  font-family: "Archivo Narrow", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
   outline: none;
   transition: all 0.3s;
   text-decoration: none !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 section {
   margin-bottom: 100px;
+}
+
+.flipped{
+  transform: rotate(90deg);
 }
 
 /* NAVBAR */
@@ -73,7 +73,7 @@ section {
 
 /* MAIN SECTION */
 #main {
-  background: url("../image/background.png");
+  background: url("../images/background.png");
   background-size: cover;
   height: 100vh;
 }
@@ -83,8 +83,8 @@ section {
 }
 
 .header-text {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 3.25rem;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -114,7 +114,6 @@ section {
 .download-links .apple-store:hover {
   color: #222;
   background-color: #fff;
-  /* border: 1px solid #fff; */
 }
 
 .download-links .play-store {
@@ -130,8 +129,10 @@ section {
 .section-title {
   text-align: center;
   margin-bottom: 50px;
-  font: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: normal;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title:after,
@@ -165,18 +166,20 @@ section {
 }
 
 #overview .single-overview .overview-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #5a34fc;
   margin-bottom: 15px;
 }
 
 #overview .single-overview .single-overview-title {
-  font-weight: bolder;
+  font-weight: 500;
   margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 #overview .single-overview .single-overview-content {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* TESTIMONIALS SECTION */
@@ -210,12 +213,17 @@ section {
 
 #pricing .card .card-body h2 {
   color: grey;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
 }
 
 #pricing .card .card-body h1 {
   color: #5a34fc;
+  font-size: 28px;
   font-weight: bold;
   padding: 3% 0;
+  font-family: "Poppins", sans-serif;
 }
 
 #pricing .card .card-body .signup-btn {
@@ -234,14 +242,14 @@ section {
 #cta {
   justify-content: center;
   background-color: #5a34fc;
-  padding: 7% 15%;
+  padding: 70px 20px;
   color: #fff;
   text-align: center;
 }
 
 #cta .cta-text {
-  font-size: 2.7rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 /* TEST MEDIA */
@@ -250,12 +258,19 @@ section {
   width: 40px;
   text-align: center;
   margin-right: 15px;
+  align-items: center;
 }
 
 .media i,
 .media h5 {
   color: #5a34fc;
 }
+
+.media h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
 
 /* FOOTER SECTION */
 #footer {
